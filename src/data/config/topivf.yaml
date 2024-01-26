@@ -1,0 +1,40 @@
+# load the default lists, whose parameters can be changed by referencing its namespace in the following
+defaults:
+  - _default
+  - base: MSMARCO-passage
+  - model: sparse
+  - index: invhit
+  - mode: train
+  # add _self_ here so that the following arguments can be rewritten
+  - _self_
+
+base:
+  eval_batch_size: 500
+
+model:
+  model_type: topivf
+
+  query_gate_k: 20
+
+  vq_src: RetroMAE
+  vq_index: IVF10000,PQ64x8
+
+  embedding_src: RetroMAE
+  return_embedding: true
+
+  load_ckpt: none
+
+  enable_commit_loss: true
+
+train:
+  epoch: 50
+
+  learning_rate: 1e-4
+  scheduler: linear
+
+eval:
+  hits: 0
+  eval_posting_length: true
+  verifier_type: pq
+  verifier_src: DistillVQ_d-RetroMAE
+  verifier_index: OPQ96,PQ96x8

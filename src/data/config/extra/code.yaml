@@ -1,0 +1,9 @@
+# @package _global_.code
+
+code_type: none
+code_length: 0
+code_tokenizer: t5
+code_sep: " "
+code_src: none
+return_code: true
+return_query_code: false

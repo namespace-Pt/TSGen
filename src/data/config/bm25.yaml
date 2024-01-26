@@ -1,0 +1,20 @@
+# load the default lists, whose parameters can be changed by referencing its namespace in the following
+defaults:
+  - _default
+  - base: MSMARCO-passage
+  - model: sparse
+  - index: bm25
+  - mode: eval
+  # add _self_ here so that the following arguments can be rewritten
+  - _self_
+
+base:
+  device: cpu
+  plm: bert
+  eval_batch_size: 1
+
+model:
+  model_type: bm25
+
+index:
+  pretokenize: false

@@ -1,0 +1,15 @@
+defaults:
+  - _default
+
+dataset: MSMARCO-doc
+text_length: 512
+query_length: 64
+
+max_text_length: 512
+max_query_length: 64
+
+plm: t5
+
+# title + url + text
+text_col: [2, 1, 3]
+text_col_sep: " "

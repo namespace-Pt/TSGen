@@ -1,0 +1,7 @@
+defaults:
+  - _default
+
+# metric used for dense retrieval
+dense_metric: ip
+# separate query and document encoder?
+untie_encoder: false

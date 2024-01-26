@@ -1,0 +1,17 @@
+# load the default lists, whose parameters can be changed by referencing its namespace in the following
+defaults:
+  - _default
+  - base: MSMARCO-passage
+  - mode: train
+  - model: sparse
+  - index: invvec
+  # add _self_ here so that the following arguments can be rewritten
+  - _self_
+
+base:
+  eval_batch_size: 2
+  num_worker: 0
+
+train:
+  batch_size: 2
+  neg_type: random

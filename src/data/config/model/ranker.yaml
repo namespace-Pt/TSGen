@@ -1,0 +1,5 @@
+defaults:
+  - _default
+
+# concate query and text as sentence pair
+return_pair: true

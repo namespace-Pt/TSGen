@@ -1,0 +1,5 @@
+defaults:
+  # essential to relocate the package
+  - /_default
+
+mode: script

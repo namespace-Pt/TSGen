@@ -1,0 +1,8 @@
+# @package _global_
+mode: cluster
+# the dense embedding can be used for clusterring
+cluster_type: hier-l2
+# the number of clusters
+ncluster: 10
+# the number of leaf node in hierarchical clusterring
+nleaf: 100

@@ -1,0 +1,7 @@
+defaults:
+  - _default
+  - _self_
+
+index_type: trie
+load_index: true
+save_index: true
