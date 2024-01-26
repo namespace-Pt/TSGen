@@ -1,4 +1,4 @@
-# Generative Retrieval via Term Set Prediction (TSGen)
+# Generative Retrieval via Term Set Generation (TSGen)
 
 This repository contains the implementation of TSGen.
 
