@@ -14,7 +14,7 @@ base:
   parallel: query
 
 model:
-  model_type: autotsg
+  model_type: tsgen
   nbeam: 10
 
 train:
