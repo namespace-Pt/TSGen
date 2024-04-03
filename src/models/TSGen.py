@@ -4,7 +4,7 @@ from .DSI import DSI
 from transformers import AutoTokenizer
 
 
-class AutoTSG(DSI):
+class TSGen(DSI):
     def __init__(self, config):
         super().__init__(config)
 

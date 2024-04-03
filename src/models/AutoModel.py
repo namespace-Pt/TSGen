@@ -3,7 +3,7 @@ import torch
 from .BaseModel import BaseModel
 
 from .AR2 import AR2
-from .AutoTSG import AutoTSG
+from .TSGen import TSGen
 from .BM25 import BM25
 from .COIL import COIL
 from .ColBERT import ColBERT
@@ -23,7 +23,7 @@ from .VQ import DistillVQ
 MODEL_MAP = {
     "ar2": AR2,
     "bm25": BM25,
-    "autotsg": AutoTSG,
+    "tsgen": TSGen,
     "coil": COIL,
     "colbert": ColBERT,
     "crossenc": CrossEncoder,
