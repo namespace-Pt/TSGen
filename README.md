@@ -35,7 +35,6 @@ cd TSGen/src/data/cache/NQ320k
 wget https://huggingface.co/datasets/namespace-Pt/adon/resolve/main/TSGen.tar.gz?download=true -O TSGen.tar.gz
 # untar the file, which results in the folder TSGen/src/data/cache/NQ320k/ckpts and TSGen/src/data/cache/NQ320k/codes
 tar -xzvf NQ320k.tar.gz
-# 
 ```
 
 - Evaluation
